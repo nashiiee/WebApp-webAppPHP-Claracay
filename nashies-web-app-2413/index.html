@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Coffee Shop Order Form</h1>
+        <form action="index.php" method="post">
+            <div class="name-container">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Orders" required>
+            </div>
+            <label for="coffee" id="coffee_type">Coffee Type: </label>
+            <select name="coffee" id="coffee">
+                <option value="espresso">Espresso - 500</option>
+                <option value="latte">Latte - 600</option>
+                <option value="cappucino">Cappucino - 650</option>
+                <option value="kapengbarako">Kapengbarako - 719</option>
+                <option value="mocha">Mocha - 750</option>
+                <option value="americano">Americano - 750</option>
+            </select>
+
+            <div class="sizes">
+                <label for="size">Sizes: </label>
+                <input type="radio" name="size" id="small" value="small">    
+                <label for="small">Small</label>
+                <input type="radio" name="size" id="medium" value="medium">
+                <label for="medium">Medium</label>
+                <input type="radio" name="size" id="large" value="large">
+                <label for="large">Large</label>
+            <div class="extras-container">
+                <label for="extras">Extras: </label>
+                <input type="checkbox" name="extras[]" id="sugar" value="sugar">
+                <label for="sugar">Sugar - 5</label>
+                <input type="checkbox" name="extras[]" id="cream" value="cream">
+                <label for="cream">Cream - 10</label>
+            </div>
+
+            <label for="instructions">Instructions</label>
+            <textarea name="instructions" id="instructions" cols="30" rows="10" placeholder="Instructions"></textarea>
+
+            <button type="submit" id="button">Place Order</button>
+        </form>
+    </div>
+
+
+
+
+    <!--
+    Server Methods
+        Get
+        - retrieve data
+        - non sensitive
+        Post
+        - form submission
+        - password
+        - data modification
+        Put
+        - update
+        Delete
+        - removal
+    -->
+</body>
+</html>
