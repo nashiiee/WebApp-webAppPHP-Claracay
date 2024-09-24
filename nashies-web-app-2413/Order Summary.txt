@@ -1,0 +1,8 @@
+Order Summary
+---------------------
+NameNash
+Coffee Type: cappucino
+Size: medium
+Total Price: 715
+instructions: dawdawd
+Thank you for ordering!
